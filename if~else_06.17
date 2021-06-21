@@ -1,0 +1,50 @@
+print("hi")
+
+import datetime
+
+now = datetime.datetime.now()
+print(now)
+
+month = now.month
+
+if 3 <= month <6:
+    print("지금은 {}월로 봄입니다 :)".format(month))
+
+elif 6 <= month < 9 :
+    print("지금은 {}월로 여름입니다.".format(month))
+
+elif 9 <= month < 12 :
+    print("지금은 {}월로 가을입니다 ㅎㅎ".format(month))
+
+else :
+    print("지금은 {}월로 겨울입니다.".format(month))
+
+import datetime
+now = datetime.datetime.now()
+
+month = now.month
+# make it more efficient
+if 9 < month <= 12 :
+    print("지금은 {}월로 겨울입니다.".format(month))
+
+elif 6 < month :
+    print("지금은 {}월로 가을입니다.".format(month))
+
+elif 3 < month :
+    print("지금은 {}월로 여름입니다 ~".format(month))
+
+else :
+    print("지금은 {}월로 봄입니다 :)".format(month))
+
+list_a = [20, 23, 13]
+list_b = [90, 3, -5]
+
+print("list_a = ", list_a)
+print("list_b = ", list_b)
+
+print("list_a + list_b = ", list_a+list_b)
+
+list_a[0]='q'
+print(list_a)
+
+print(len(list_a))
