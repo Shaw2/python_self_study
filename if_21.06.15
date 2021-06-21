@@ -1,0 +1,63 @@
+x =25
+print(10<x<30)
+
+x = 10
+under_20 = x <20
+print("under_20", under_20)
+print("not under_20", not under_20)
+
+print(not True)
+print(not False)
+
+number = int(input("정수 입력>"))
+type(number)
+
+if number > 0 :
+    print("number는 양수입니다. : ", number)
+
+if number < 0 :
+    print("number는 음수입니다. : ", number)
+
+if number == 0 :
+    print("number는 ", number, "입니다.")
+    print("number는 {}입니다.".format(number))
+
+print("파이썬 열공하여 첫 연봉 {}만원 만들기".format(5000))
+
+import datetime
+
+now = datetime.datetime.now()
+print(now.year, "년")
+print(now.month, "월")
+print(now.day, "일")
+print(now.hour, "시")
+
+print("{}년 {}월 {}일, {}시 {}분 {}초".format(now.year, now.month, now.day, now.hour, now.minute, now.second))
+
+import datetime
+
+now = datetime.datetime.now()
+
+if now.hour < 12 :
+    print("지금은 {}시로 오전입니다!".format(now.hour))
+
+if now.hour > 12 :
+    print("지금은 {}시로 오후입니다!".format(now.hour))
+
+if 6 <= now.month <= 8 :
+    print("지금은 {}월로 여름입니다~".format(now.month))
+
+a = input("정수입력 >")
+
+last_character = a[-1]
+
+last_character = int(last_character)
+
+b = last_character%2
+print(b)
+
+if b == 1 :
+    print("a는 홀수 입니다.")
+
+if b == 0 :
+    print("a는 짝수 입니다.")
