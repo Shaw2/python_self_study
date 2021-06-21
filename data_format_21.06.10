@@ -1,0 +1,75 @@
+output_a = "{:d}".format(52)
+input_a = input("Say somethigs>")
+
+output_a
+input_a
+
+output_b = "{:5d}".format(52)
+output_b
+
+output_c = "{:10d}".format(52)
+output_c
+
+output_d = "{:05d}".format(52)
+output_d
+
+output_e = "{:010d} is format {}".format(52, 52)
+output_e
+
+output_f = "{:+d}".format(52)
+output_f
+output_g = "{:d}".format(-52)
+output_g
+
+output_h = "{:+5d}".format(52)
+output_h
+output_i = "{:=+5d}".format(52)
+output_i
+
+output_j = "{:.3f}".format(52.1735)
+output_j
+output_k = "{:+.4f}".format(52.1735)
+output_k
+
+output_a = 52.210
+output_b = "{:g}".format(output_a)
+output_b
+
+----------------------
+input_a = """
+    안녕하세요
+문자열의 함수를 알아봅니다
+"""
+print(input_a)
+
+print(strip(input_a))
+print(input_a.strip())
+
+output_a = "녕안녕뇽안녕하세요".find("안녕")
+output_a
+output_b = "녕안녕뇽안녕하세요".rfind("안녕")
+output_b
+
+output_c = "뇽" in "안뇽하세요"
+print(output_c)
+
+output_d = "a 10 30 20 40 b".split()
+print(output_d)
+
+a = input("1번째 숫자 >")
+b = input("2번째 숫자 >")
+type(a)
+int_a = int(a)
+type(int(a))
+int_b = int(b)
+print("{} + {} = {}".format(a, b, int_a + int_b))
+
+string = "hello"
+string.isupper()
+string.islower()
+
+string.upper()
+
+string
+
+print("B 지점:", string.upper())
